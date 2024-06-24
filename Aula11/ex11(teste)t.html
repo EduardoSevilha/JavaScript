@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vefificando a nacionalidade</h1>
+    A sua nacionalidade é: <input type="text" name="text" id="text">
+    <input type="button" value="Verificar" onclick="viver()">
+    <div id="local">
+
+    </div>
+
+    <script>
+        function viver(){
+            var ctexto = window.document.getElementById('text')
+            var local = window.document.getElementById('local')
+            var pais = 'Brasil'
+            local.innerHTML = `<p>Você mora no ${pais}, portanto, é Brasileiro</p>`
+            if (pais == Brasil){
+                local.innerHTML += `<p>Você nasceu no ${pais}, portanto, é Brasileiro</p>`
+            } else{
+                local.innerHTML = `<p>Você nasceu no(a) ${pais}, portanto, é estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
