@@ -23,11 +23,11 @@
             var ctexto = window.document.getElementById('text')
             var local = window.document.getElementById('local')
             var pais = 'Brasil'
-            local.innerHTML = `<p>Você mora no ${pais}, portanto, é Brasileiro</p>`
+            local.innerHTML = `<p>Você mora no(a) ${pais}.</p>`
             if (pais == Brasil){
                 local.innerHTML += `<p>Você nasceu no ${pais}, portanto, é Brasileiro</p>`
-            } else{
-                local.innerHTML = `<p>Você nasceu no(a) ${pais}, portanto, é estrangeiro!</p>`
+            }else{
+                local.innerText += `<p>Você nasceu no(a) ${pais}, portanto, é estrangeiro!</p>`
             }
         }
     </script>
